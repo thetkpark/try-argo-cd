@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: ghost-depl
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: ghost
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: ghost
     spec:
       containers:
-      - name: myapp
-        image: nginx
+      - name: ghost
+        image: ghost
         ports:
         - containerPort: 80
