@@ -17,7 +17,7 @@ spec:
 
   syncPolicy:
     syncOptions:
-    - createNamespace=true
+    - CreateNamespace=true
 
     automated:
       selfHeal: true # enable automatic sync when the live cluster's state deviates from the state defined in Git
